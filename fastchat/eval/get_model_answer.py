@@ -57,7 +57,7 @@ def get_model_answers(model_path, model_id, question_jsons):
         output_ids = model.generate(
             torch.as_tensor(input_ids).cuda(),
             do_sample=True,
-            temperature=0.7,
+            temperature=0.1,
             max_new_tokens=1024,
         )
         output_ids = output_ids[0][len(input_ids[0]) :]
