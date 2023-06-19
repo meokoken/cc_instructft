@@ -4,18 +4,6 @@ This directory contains end-to-end pipelines for AI-enhanced evaluation. We will
 
 ## Generate Answers
 
-### ChatGPT (gpt-3.5-turbo)
-
-Make sure you have setup the OpenAI API Key in your environment. Then run:
-
-```bash
-python qa_baseline_gpt35.py --question table/question.jsonl --output table/answer/answer_gpt35.jsonl
-```
-
-### Bard
-
-Unfortunately, Bard has not release its public APIs till now. You may have to enter the anwsers manually. Or you could find a third-party project that interfaces with Bard.
-
 ### Vicuna and others
 
 To generate answers with Vicuna or other models, specify path to the model checkpoint, a desired model ID and run:
