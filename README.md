@@ -8,5 +8,16 @@
 
 
 ## Contents 
-- [Install](#install)
-- [Model Weights](#model-weights)
+- [Intuition](#intuition)
+- [Creating dataset](#creating-dataset)
+
+
+## Intuition 
+
+We want to be able to finetune [**Vicuna LLM**] (https://chat.lmsys.org/) on documents to learn domain knowledge/words for question-answering (QA) purposes.
+
+To achieve that, we plan to create a QA dataset to finetune the Vicuna base model.
+
+## Creating dataset
+
+
