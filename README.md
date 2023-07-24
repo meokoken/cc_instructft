@@ -10,7 +10,6 @@
 ## Contents 
 - [Introduction](#introduction)
 - [Creating dataset](#creating-dataset)
-- [Data Augmentation](#data-augmentation)
 - [Fine-tuning](#fine-tuning)
 - [Demo](#demo)
 
@@ -27,20 +26,23 @@ In order to fine-tune the base model to be able to understand and answer queries
 
 We are given the army documents in the form of a PDF file. 
 
-
-## Data Augmentation
-
-
-
-### Data Transformation
-
+### Instructions
+1) Place your selected pdf files in pdf_files_chunk/pdf_files
+2) Navigate to pdf_files_chunk/pdf_chunker.ipynb
+3) Chunked file will be written in output.json
+4) convert output.json from json format to jsonl format, place the file in fastchat/eval/table
+5) navigate to fastchat/eval and run this command
+python get_model_answer.py --model-id vicuna-13b --model-path ../../../13B --question-file table/output.jsonl --answer-file table/answer/output.jsonl --num-gpus 4
+6) Now, output.jsonl in table/answer folder contains vicunas response of question and answer pairs. Follow readme in automate_vicuna_qa folder
 
 
 ## Fine-tuning
-
+1) place output json file of creating dataset in data folder
+2) run LoRA_finetuning.ipynb
 
 
 ## Demo
+1) read readme in demo folder 
 
 
 
