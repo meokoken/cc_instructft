@@ -32,8 +32,7 @@ We are given the army documents in the form of a PDF file.
 2) Navigate to pdf_files_chunk/pdf_chunker.ipynb
 3) Chunked file will be written in output.json
 4) Convert output.json from json format to jsonl format, place the file in fastchat/eval/table
-5) Navigate to fastchat/eval and run this command
-python get_model_answer.py --model-id vicuna-13b --model-path ../../../13B --question-file table/output.jsonl --answer-file table/answer/output.jsonl --num-gpus 4
+5) Navigate to fastchat/eval and follow README
 6) Now, output.jsonl in table/answer folder contains vicunas response of question and answer pairs. 
 7) Follow README in automate_vicuna_qa folder
 
